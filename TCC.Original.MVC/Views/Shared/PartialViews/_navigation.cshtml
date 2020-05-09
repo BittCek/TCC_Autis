@@ -1,0 +1,57 @@
+﻿    <!-- Navigation-->
+<nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" asp-controller="Home" asp-action="index">Autis</a>
+        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" asp-area="" asp-controller="Home" asp-action="Index">Página Inicial</a></li>
+
+                <li class="nav-item dropdown show mx-0 mx-lg-1">
+                    <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded js-scroll-trigge" data-toggle="dropdown" asp-controller="Home" asp-action="Index">Login</a>
+                    <ul class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuLink">
+                        <form class="px-4 py-3">
+                            <div class="form-group">
+                                <label for="exampleDropdownFormEmail1">Endereço de Email</label>
+                                <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@exemplo.com.br">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleDropdownFormPassword1">Senha</label>
+                                <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Senha">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                                <label class="form-check-label" for="dropdownCheck">
+                                    Salvar conta
+                                </label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Novo por aqui? Inscrever-se</a>
+                        <a class="dropdown-item" href="#">Esqueceu a senha?</a>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item dropdown show mx-0 mx-lg-1">
+                    <a class="nav-link dropdown-toggle py-3 px-0 px-lg-3 rounded js-scroll-trigge" data-toggle="dropdown" asp-controller="Home" asp-action="Index">Cuidados</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" asp-controller="Remedios" asp-action="Index">Remédios</a></li>
+                        <li><a class="dropdown-item" asp-controller="Alimenta" asp-action="Index">Alimentação</a></li>
+                        <li><a class="dropdown-item" asp-controller="Tratamento" asp-action="Index">Tratamentos</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" asp-area="" asp-controller="Profissionais" asp-action="Index">Profissionais</a></li>
+
+                <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" asp-area="" asp-controller="Contact" asp-action="Index">Contate-nos</a></li>
+
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
